@@ -24,10 +24,10 @@ class sco extends uvm_scoreboard;
     else if(tr.tx_data == tr.rx_out)
       `uvm_info("SCO", "Test Passed", UVM_NONE)
     else
-      begin
-        `uvm_info("SCO", "Test Failed", UVM_NONE)
-        $display("----------------------------------------");
-      end
+     //begin
+        `uvm_error("SCO", "Test Failed")
+      $display("---------------------------------------------------------------------");
+      //end
   endfunction
   
 endclass
