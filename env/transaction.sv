@@ -5,7 +5,7 @@ class transaction extends uvm_sequence_item;
     logic tx_start,rx_start;
     logic rst;
     rand logic[7:0] tx_data;
-    rand logic[16:0] baud;
+    rand logic[19:0] baud;
     rand logic [3:0] length;
     rand logic parity_type, parity_en;
     logic stop2;
