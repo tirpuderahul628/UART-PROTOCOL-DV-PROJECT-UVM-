@@ -1,14 +1,14 @@
 `timescale 1ns/1ps
-`include "clock_gen.sv"
+`include "clock_gen_v2.sv"
 `include "uart_tx.sv"
-`include "uart_rx.sv"
+`include "uart_rx_v2.sv"
 //////////////////////////////////////////////
 
 module uart_top(
     input clk,rst,
     input tx_start,rx_start,
     input [7:0] tx_data,
-    input [16:0] baud,
+    input [19:0] baud,
     input [3:0] length,
     input parity_type, parity_en,
     input stop2,
