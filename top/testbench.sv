@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 `include "uvm_macros.svh"
 `include "uart_intf.sv"
 `include "uart_pkg.sv"
