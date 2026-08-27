@@ -52,8 +52,9 @@ class driver extends uvm_driver#(transaction);
 
             @(posedge vif.clk);
             @(posedge vif.tx_done);
-
             @(negedge vif.rx_done);
+            // Allow 2 clock cycles in idle state before starting next frame
+            repeat(2) @(posedge vif.clk);
             seq_item_port.item_done();
 
         end
