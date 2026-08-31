@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-`include "clock_gen_v2.sv"
+`include "clock_gen.sv"
 `include "uart_tx.sv"
 `include "uart_rx_v2.sv"
 //////////////////////////////////////////////
